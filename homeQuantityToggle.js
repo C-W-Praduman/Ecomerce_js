@@ -2,7 +2,7 @@
 //?  This function is handling the product quantity
 
 export const homeQuantityToggle = (event,id,stock)=>{
-    //? get the card on which the user is clicking
+    //? get the card on which the user is clicking it is set in the homeProductCard,js file line num: 18||
     const currentCardElement = document.querySelector(`#card${id}`);
    
     //? getn the product quatity 
@@ -16,7 +16,7 @@ export const homeQuantityToggle = (event,id,stock)=>{
         if(quantity < stock){
             quantity++
         }else if(quantity === stock){ 
-            quantity = stock            
+            quantity = stock;            
         }
     }
 
