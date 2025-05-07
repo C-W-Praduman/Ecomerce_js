@@ -24,7 +24,7 @@ export const addToCart = (event, id, stock) => {
         updatedCart = arrLocalStorageProduct.map((curelem) => {
             return curelem.id === id ? updatedCart : curelem;
         });
-        console.log(updatedCart);
+        // console.log(updatedCart);
 
         localStorage.setItem("cartProductLS", JSON.stringify(updatedCart));
 
